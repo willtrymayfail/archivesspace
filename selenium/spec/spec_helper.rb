@@ -1,3 +1,5 @@
+require 'coveralls'
+Coveralls.wear!
 require_relative 'factories'
 require 'pry'
 
@@ -69,9 +71,9 @@ RSpec.configure do |config|
     report_sleep
     cleanup
   end
-  
+
   config.before(:all) do
-    Dir.glob(File.join(Dir.tmpdir, "*.{csv, pdf,xml}") ).each do |file| 
+    Dir.glob(File.join(Dir.tmpdir, "*.{csv, pdf,xml}") ).each do |file|
       cmd = "rm #{ file }"
       %x{ #{cmd} }
     end

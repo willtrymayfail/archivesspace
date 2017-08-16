@@ -20,6 +20,7 @@ group :test do
   gem "multipart-post", "1.2.0"
 
   gem "pry"
+  gem "coveralls"
 end
 
 group :development do
@@ -30,5 +31,3 @@ group :development do
     instance_eval(File.read(gemfile_local))
   end
 end
-
-

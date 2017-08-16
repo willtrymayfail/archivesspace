@@ -1,3 +1,6 @@
+require 'coveralls'
+Coveralls.wear!('rails')
+
 require 'rspec'
 require 'jsonmodel'
 
